@@ -16,9 +16,12 @@ Business knowledge wise, focus was in on the newest golf statistic - strokes gai
 - sg_t2g is strokes gained tee to green and is equal to sg_ott + sg_app + sg_arg
 - sg_total = sg_t2g + sg_putt
 
-This resulted in SGD Classifier - Accuracy 0.807, F1 0.818
+**Initial Result**
+```
+SGD Classifier - Accuracy 0.807, F1 0.818
 Support Vector Classification - Accuracy 0.791, F1 0.818 with Sigmoid, Accuracy 0.822 and F1 0.837 with RBF
 3 Layer Neural Net - Accuracy 0.829, F1 0.837
+```
 
 Feature selection using classifiers was deployed through ExtraTreesClassifier and RandomForestClassifier ensemble methods.
 ex
@@ -45,11 +48,14 @@ humidity	0.009924848973	0.006528902359
 cloudcover	0.009894277397	0.006750037825
 pressure	0.009601711688	0.006581443677
 ```
-**Algorithms New scores Previous Scores**
+
+**Results**
+```Algorithms New scores Previous Scores
 Random Forest Accuracy 0.866, F1 Score 0.879 NA
 SVM Accuracy 0.856, F1 Score 0.872 Accuracy 0.791, F1 0.818
 MLP CLassifier Accuracy 0.86, F1 Score 0.88 NA
 Deep Neural Network Accuracy 0.85, F1 Score 0.87 Accuracy 0.829, F1 0.837
+```
 
 **Takeaways**
 Always interesting to see how the model performs after employing feature selection + business intuition
