@@ -22,6 +22,7 @@ Support Vector Classification - Accuracy 0.791, F1 0.818 with Sigmoid, Accuracy 
 
 Feature selection using classifiers was deployed through ExtraTreesClassifier and RandomForestClassifier ensemble methods.
 ex
+```
 Feature	Random Forest Importance	Extra Trees Importance
 sg_total	0.2583497382	0.2039989467
 sg_t2g	0.1129757101	0.1110418078
@@ -43,14 +44,14 @@ Slope	0.01015089579	0.008316386746
 humidity	0.009924848973	0.006528902359
 cloudcover	0.009894277397	0.006750037825
 pressure	0.009601711688	0.006581443677
-
-Algorithms New scores Previous Scores
+```
+**Algorithms New scores Previous Scores**
 Random Forest Accuracy 0.866, F1 Score 0.879 NA
 SVM Accuracy 0.856, F1 Score 0.872 Accuracy 0.791, F1 0.818
 MLP CLassifier Accuracy 0.86, F1 Score 0.88 NA
 Deep Neural Network Accuracy 0.85, F1 Score 0.87 Accuracy 0.829, F1 0.837
 
-Takeaways
+**Takeaways**
 Always interesting to see how the model performs after employing feature selection + business intuition
 NN may not always be the best answer, if your data is linear, linear regression is your best friend
 Exploratory analysis should guide you if your data has a more of a linear relationship or a more complex relationship
